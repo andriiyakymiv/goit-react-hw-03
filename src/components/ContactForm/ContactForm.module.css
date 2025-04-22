@@ -1,35 +1,60 @@
 .form {
-    width: 400px;
-
+    display: flex;
+    flex-direction: column;
+    width: 430px;
     margin-bottom: 40px;
-    padding: 30px;
-
-    border: 2px solid #000000;
-    border-radius: 8px;
+    padding: 40px;
+    background-color: #00ADB5;
+    color: #393E46;
+    border-radius: 4px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 }
 
-.fieldWrapper {
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
     position: relative;
+}
+
+.label {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #393E46;
 }
 
 .field {
     display: block;
+    padding: 8px 16px;
     width: 100%;
+    border-radius: 4px;
     margin-bottom: 20px;
+    border: none;
+    font-size: 16px;
 }
 
 .error {
     position: absolute;
-    bottom: -20px;
-    left: 0;
+    right: 0;
 
-    color: #ff0000;
+    color: #EEEEEE;
 }
 
 .btn {
-    display: block;
+    padding: 12px;
+        background-color: #405D72;
+        color: #EEEEEE;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+
+
+    /* display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
-    padding: 5px 10px;
+    padding: 5px 10px; */
+
 }

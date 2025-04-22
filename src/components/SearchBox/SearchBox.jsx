@@ -6,7 +6,7 @@ const SearchBox = ({ handleChange, value }) => {
   const searchId = useId();
 
   return (
-    <label htmlFor={searchId}>
+    <label className={style.label} htmlFor={searchId}>
       Find contacts by name
       <input className={style.input} onChange={handleChange} value={value} type="text" name="search" id={searchId} />
     </label>
