@@ -1,0 +1,35 @@
+.form {
+    width: 400px;
+
+    margin-bottom: 40px;
+    padding: 30px;
+
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+.fieldWrapper {
+    position: relative;
+}
+
+.field {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.error {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+
+    color: #ff0000;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
