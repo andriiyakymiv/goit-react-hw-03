@@ -1,0 +1,35 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 400px;
+    padding: 20px;
+
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.icon {
+    margin-right: 12px;
+}
+
+.btnDel {
+    padding: 8px 12px;
+    border-radius: 4px;
+}
