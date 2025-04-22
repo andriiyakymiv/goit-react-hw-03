@@ -1,5 +1,5 @@
-import { FaUser } from 'react-icons/fa';
-import { BsFillTelephoneFill } from 'react-icons/bs';
+import { FaUserAlt } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
 import style from './Contact.module.css';
 
@@ -7,22 +7,23 @@ const Contact = ({ contact: { id, name, number }, handleDelete }) => {
   return (
     <div className={style.item}>
       <div>
+
         <h2 className={style.title}>
-          <span className={style.icon}>
-            <FaUser />
-          </span>
+          <span className={style.icon}> <FaUserAlt /></span>
           {name}
         </h2>
-        <p className={style.tel}>
-          <span className={style.icon}>
-            <BsFillTelephoneFill />
-          </span>
+
+        <p className={style.phone}>
+          <span className={style.icon}><FaPhone /></span>
           {number}
         </p>
+
       </div>
-      <button className={style.btnDel} onClick={() => handleDelete(id)} type="button">
+
+      <button className={style.button__delete} onClick={() => handleDelete(id)} type="button">
         Delete
       </button>
+
     </div>
   );
 };
