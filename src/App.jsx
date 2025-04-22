@@ -6,6 +6,7 @@ import ContactForm from './components/ContactForm/ContactForm';
 
 import './App.css';
 import ContactList from './components/ContactList/ContactList';
+import SearchBox from './components/SearchBox/SearchBox';
 
 function App() {
   const [searchValue, setSearchValue] = useState('');
@@ -29,6 +30,7 @@ function App() {
     <>
       <h1>Phonebook</h1>
       <ContactForm addContact={addContact} />
+      <SearchBox handleChange={handleChange} value={searchValue} />
       <ContactList contacts={filteredContacts} handleDelete={handleDelete} />
     </>
   );
