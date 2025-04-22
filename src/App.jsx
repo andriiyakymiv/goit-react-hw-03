@@ -6,7 +6,6 @@ import contactsData from './data/contacts.json';
 import ContactForm from './components/ContactForm/ContactForm';
 import ContactList from './components/ContactList/ContactList';
 import SearchBox from './components/SearchBox/SearchBox';
-
 import './App.css';
 
 function App() {
@@ -29,10 +28,12 @@ function App() {
   
   return (
     <>
-      <h1>Phonebook</h1>
+      <section className='container'>
+      <h1 className='title'>Phonebook</h1>
       <ContactForm addContact={addContact} />
       <SearchBox value={searchValue} handleChange={handleChange} />
       <ContactList contacts={filterContacts} handleDelete={handleDelete} />
+      </section>
     </>
   );
 };
